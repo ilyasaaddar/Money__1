@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Extra Income - Your Path to Easy Online Earnings!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>💰 Unlock Extra Income: Your Golden Opportunity to Make Money Online Easily from Home!</h1>
+            <p class="subtitle">Looking for a reliable way to boost your earnings? Your journey to financial freedom and stability starts here!</p>
+            <div class="cta-area">
+                <a href="https://installchecker.com/cl/i/kldnoq" class="main-cta-button">Start Your Earning Journey Now!</a>
+                <p class="cta-note">Limited Opportunities – Don't Miss Out!</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="benefits-section section">
+            <h2>Why Wait? Discover How Your Financial Situation Can Transform</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <img src="https://via.placeholder.com/80/e6f7ff/007bff?text=💰" alt="Money" class="benefit-icon">
+                    <h3>Real Earning Opportunities</h3>
+                    <p>We offer hand-picked, reliable online money-making opportunities, simple and straightforward.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="https://via.placeholder.com/80/e6f7ff/007bff?text=⏰" alt="Time" class="benefit-icon">
+                    <h3>Flexible Hours</h3>
+                    <p>Work as much or as little as you want, anytime, anywhere. You're your own boss!</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="https://via.placeholder.com/80/e6f7ff/007bff?text=📈" alt="Growth" class="benefit-icon">
+                    <h3>Continuous Growth</h3>
+                    <p>Learn new skills that open up even more avenues to increase your profits over time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section section">
+            <h2>Success Stories from Our Community</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <p>"I never thought making money online could be this easy! I started skeptical, and now I have excellent extra income."</p>
+                    <div class="author-info">
+                        <img src="https://via.placeholder.com/60/a8dadc/ffffff?text=John" alt="John's photo" class="author-img">
+                        <span>John D., 29 years old</span>
+                    </div>
+                </div>
+                 <div class="testimonial-card">
+                    <p>"I was looking for extra work to fit my studies. This platform changed my perspective on freelancing, offering a great opportunity!"</p>
+                    <div class="author-info">
+                        <img src="https://via.placeholder.com/60/a8dadc/ffffff?text=Sarah" alt="Sarah's photo" class="author-img">
+                        <span>Sarah L., 22 years old</span>
+                    </div>
+                </div>
+                 <div class="testimonial-card">
+                    <p>"Juggling jobs was exhausting. Now I work from home and earn enough to support my family. Highly recommend!"</p>
+                    <div class="author-info">
+                        <img src="https://via.placeholder.com/60/a8dadc/ffffff?text=Michael" alt="Michael's photo" class="author-img">
+                        <span>Michael P., 45 years old</span>
+                    </div>
+                </div>
+            </div>
+            <p class="testimonial-note">Thousands have transformed their financial lives. Are you ready to be next?</p>
+        </section>
+
+        <section class="challenge-section section">
+            <h2>Are You Ready to Take the First Step Towards Financial Independence?</h2>
+            <p>Don't let doubt stop you from seizing an opportunity that could change your life. Time is precious, and opportunities don't last!</p>
+            <div class="countdown-timer">
+                <span id="days">00</span> Days
+                <span id="hours">00</span> Hours
+                <span id="minutes">00</span> Minutes
+                <span id="seconds">00</span> Seconds
+            </div>
+            <a href="https://installchecker.com/cl/i/kldnoq" class="main-cta-button animated-button">Yes, I Want to Start Earning Now!</a>
+            <p class="cta-note">Click above to begin a quick verification process before starting.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Money Opportunity. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Use</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Set the countdown end date (e.g., 3 days from now)
+        const countdownElement = document.querySelector('.countdown-timer');
+        const now = new Date();
+        // Setting end date for 3 days from now, precise to current time
+        // Current time is Tuesday, June 10, 2025 at 2:10:27 AM +01 (Casablanca)
+        const endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 3, now.getHours(), now.getMinutes(), now.getSeconds()); 
+        const finalTime = endDate.getTime();
+
+        const x = setInterval(function() {
+            const currentTime = new Date().getTime();
+            const distance = finalTime - currentTime;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            countdownElement.innerHTML = 
+                `<span id="days">${String(days).padStart(2, '0')}</span> Days
+                 <span id="hours">${String(hours).padStart(2, '0')}</span> Hours
+                 <span id="minutes">${String(minutes).padStart(2, '0')}</span> Minutes
+                 <span id="seconds">${String(seconds).padStart(2, '0')}</span> Seconds`;
+
+            if (distance < 0) {
+                clearInterval(x);
+                countdownElement.innerHTML = "Offer Expired! But you can still try.";
+            }
+        }, 1000);
+
+        // Simple button animation on hover
+        const ctaButton = document.querySelector('.animated-button');
+        ctaButton.addEventListener('mouseover', () => {
+            ctaButton.style.transform = 'scale(1.05)';
+        });
+        ctaButton.addEventListener('mouseout', () => {
+            ctaButton.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+</html>
